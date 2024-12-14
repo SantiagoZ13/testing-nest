@@ -9,24 +9,4 @@ export class UserController {
   getAllUser() {
     return this.UserService.getAllUser();
   }
-
-  @Post('/')
-  createTask() {
-    return 'created task';
-  }
-
-  @Put('/')
-  updateTask() {
-    return 'updated task';
-  }
-
-  @Delete('/')
-  deleteTask() {
-    return 'deleted task';
-  }
-
-  @Patch('/')
-  updateTaskStatus() {
-    return 'updated task status';
-  }
 }

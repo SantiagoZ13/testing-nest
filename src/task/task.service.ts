@@ -2,13 +2,6 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class TaskService {
-  getTask() {
-    return {
-      name: 'Task 1',
-      description: 'Task 1 description',
-      category: 'Task 1 category',
-    };
-  }
   getTasks() {
     return [
       {
@@ -22,5 +15,17 @@ export class TaskService {
         category: 'Task 2 category',
       },
     ];
+  }
+  createTask() {
+    return 'created task';
+  }
+  updateTask() {
+    return 'updated task';
+  }
+  deleteTask() {
+    return 'deleted task';
+  }
+  updateTaskStatus() {
+    return 'updated task status';
   }
 }
